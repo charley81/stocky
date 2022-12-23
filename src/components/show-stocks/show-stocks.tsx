@@ -9,7 +9,15 @@ export class ShowStocks {
   render() {
     return (
       <Host>
-        <h3>show stocks</h3>
+        <ul>
+          <stock-item></stock-item>
+          <stock-item></stock-item>
+          <stock-item></stock-item>
+          <stock-item></stock-item>
+          <stock-item></stock-item>
+          <stock-item></stock-item>
+          <stock-item></stock-item>
+        </ul>
       </Host>
     );
   }

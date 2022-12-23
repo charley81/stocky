@@ -9,7 +9,9 @@ export class ShowPrice {
   render() {
     return (
       <Host>
-        <h3>show price</h3>
+        <p>
+          Price <span>$0</span>
+        </p>
       </Host>
     );
   }

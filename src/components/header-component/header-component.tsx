@@ -9,7 +9,9 @@ export class HeaderComponent {
   render() {
     return (
       <Host>
-        <h3>header component</h3>
+        <h3>
+          <span>S</span>TOCKY
+        </h3>
       </Host>
     );
   }

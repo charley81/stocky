@@ -8,9 +8,12 @@ import { Component, Host, h } from '@stencil/core';
 export class SearchStocks {
   render() {
     return (
-      <Host>
-        <h3>search stocks</h3>
-      </Host>
+      <form>
+        <label htmlFor="search-stock">
+          <input type="text" id="search-stock" name="search-stock" placeholder="search a stock..." />
+        </label>
+        <button type="submit">search</button>
+      </form>
     );
   }
 }

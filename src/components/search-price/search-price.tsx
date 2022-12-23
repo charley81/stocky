@@ -1,4 +1,4 @@
-import { Component, Host, h } from '@stencil/core';
+import { Component, h } from '@stencil/core';
 
 @Component({
   tag: 'search-price',
@@ -8,9 +8,12 @@ import { Component, Host, h } from '@stencil/core';
 export class SearchPrice {
   render() {
     return (
-      <Host>
-        <h3>search price</h3>
-      </Host>
+      <form>
+        <label htmlFor="search-price">
+          <input type="text" id="search-price" name="search-price" placeholder="search a stock price..." />
+        </label>
+        <button type="submit">submit</button>
+      </form>
     );
   }
 }
