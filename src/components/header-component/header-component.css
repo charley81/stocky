@@ -1,6 +1,8 @@
 :host {
   display: block;
   padding: 1rem;
+  max-width: var(--max-width-tablet);
+  margin: auto;
 }
 
 h3 {
@@ -10,4 +12,10 @@ h3 {
 
 h3 span {
   color: var(--color-primary);
+}
+
+@media screen and (min-width: 1150px) {
+  :host {
+    max-width: var(--max-width-desktop);
+  }
 }

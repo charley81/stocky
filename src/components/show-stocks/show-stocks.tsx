@@ -1,4 +1,4 @@
-import { Component, Host, h } from '@stencil/core';
+import { Component, h } from '@stencil/core';
 
 @Component({
   tag: 'show-stocks',
@@ -8,17 +8,15 @@ import { Component, Host, h } from '@stencil/core';
 export class ShowStocks {
   render() {
     return (
-      <Host>
-        <ul>
-          <stock-item></stock-item>
-          <stock-item></stock-item>
-          <stock-item></stock-item>
-          <stock-item></stock-item>
-          <stock-item></stock-item>
-          <stock-item></stock-item>
-          <stock-item></stock-item>
-        </ul>
-      </Host>
+      <ul>
+        <stock-item></stock-item>
+        <stock-item></stock-item>
+        <stock-item></stock-item>
+        <stock-item></stock-item>
+        <stock-item></stock-item>
+        <stock-item></stock-item>
+        <stock-item></stock-item>
+      </ul>
     );
   }
 }

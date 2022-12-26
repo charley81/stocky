@@ -10,7 +10,7 @@ export class ShowPrice {
     return (
       <Host>
         <p>
-          Price <span>$0</span>
+          Price: <span>$0</span>
         </p>
       </Host>
     );

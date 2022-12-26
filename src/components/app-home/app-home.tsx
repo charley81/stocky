@@ -10,10 +10,16 @@ export class AppHome {
     return (
       <div class="app-home">
         <header-component></header-component>
-        <search-price></search-price>
-        <show-price></show-price>
-        <search-stocks></search-stocks>
-        <show-stocks></show-stocks>
+        <main>
+          <div class="left-side">
+            <search-price></search-price>
+            <show-price></show-price>
+          </div>
+          <div class="right-side">
+            <search-stocks></search-stocks>
+            <show-stocks></show-stocks>
+          </div>
+        </main>
       </div>
     );
   }

@@ -2,7 +2,7 @@
 
 :root {
   --font-family: 'Montserrat', sans-serif;
-  --border-radius: 2px;
+  --border-radius: 4px;
   --transition: all 0.1s ease;
   --max-width-tablet: 678px;
   --max-width-desktop: 1150px;
@@ -30,4 +30,10 @@ body {
   background-image: linear-gradient(to bottom right, var(--color-dark-secondary), var(--color-dark));
   color: var(--color-light);
   height: 100vh;
+}
+
+/* utility classes */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-dark);
 }

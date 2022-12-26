@@ -1,0 +1,9 @@
+@media screen and (min-width: 1150px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: var(--max-width-desktop);
+    margin: 4rem auto 0;
+  }
+}
