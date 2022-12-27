@@ -13,10 +13,14 @@ export namespace Components {
     interface HeaderComponent {
     }
     interface SearchPrice {
+        "onFetchStockPrice": any;
+        "onInput": any;
+        "symbol": string;
     }
     interface SearchStocks {
     }
     interface ShowPrice {
+        "stockPrice": number;
     }
     interface ShowStocks {
     }
@@ -91,10 +95,14 @@ declare namespace LocalJSX {
     interface HeaderComponent {
     }
     interface SearchPrice {
+        "onFetchStockPrice"?: any;
+        "onInput"?: any;
+        "symbol"?: string;
     }
     interface SearchStocks {
     }
     interface ShowPrice {
+        "stockPrice"?: number;
     }
     interface ShowStocks {
     }

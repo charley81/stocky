@@ -1,4 +1,4 @@
-import { Component, Host, h } from '@stencil/core';
+import { Component, Host, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'show-price',
@@ -6,11 +6,13 @@ import { Component, Host, h } from '@stencil/core';
   shadow: true,
 })
 export class ShowPrice {
+  @Prop() stockPrice: number;
+
   render() {
     return (
       <Host>
         <p>
-          Price: <span>$0</span>
+          Price: <span>${this.stockPrice}</span>
         </p>
       </Host>
     );
