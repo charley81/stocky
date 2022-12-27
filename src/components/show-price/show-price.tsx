@@ -7,14 +7,27 @@ import { Component, Host, h, Prop } from '@stencil/core';
 })
 export class ShowPrice {
   @Prop() stockPrice: number;
+  @Prop() error: string;
 
   render() {
-    return (
-      <Host>
+    let dataContent = <p>Please enter a stock symbol</p>;
+
+    if (this.error) {
+      dataContent = (
+        <p>
+          Error: <span>{this.error}</span>
+        </p>
+      );
+    }
+
+    if (this.stockPrice) {
+      dataContent = (
         <p>
           Price: <span>${this.stockPrice}</span>
         </p>
-      </Host>
-    );
+      );
+    }
+
+    return <Host>{dataContent}</Host>;
   }
 }

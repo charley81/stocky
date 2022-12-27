@@ -31,9 +31,3 @@ body {
   color: var(--color-light);
   height: 100vh;
 }
-
-/* utility classes */
-.btn-primary {
-  background-color: var(--color-primary);
-  color: var(--color-dark);
-}

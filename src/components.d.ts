@@ -13,6 +13,7 @@ export namespace Components {
     interface HeaderComponent {
     }
     interface SearchPrice {
+        "inputValid": boolean;
         "onFetchStockPrice": any;
         "onInput": any;
         "symbol": string;
@@ -20,6 +21,7 @@ export namespace Components {
     interface SearchStocks {
     }
     interface ShowPrice {
+        "error": string;
         "stockPrice": number;
     }
     interface ShowStocks {
@@ -95,6 +97,7 @@ declare namespace LocalJSX {
     interface HeaderComponent {
     }
     interface SearchPrice {
+        "inputValid"?: boolean;
         "onFetchStockPrice"?: any;
         "onInput"?: any;
         "symbol"?: string;
@@ -102,6 +105,7 @@ declare namespace LocalJSX {
     interface SearchStocks {
     }
     interface ShowPrice {
+        "error"?: string;
         "stockPrice"?: number;
     }
     interface ShowStocks {
